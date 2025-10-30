@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bizim-performans-araci"
+version = "0.1.0"
+description = "CLI wrapper to capture CPU and RAM usage for test runs."
+authors = [{ name = "Bizim Takim" }]
+requires-python = ">=3.10"
+dependencies = [
+    "psutil>=5.9,<6.0",
+    "requests>=2.31,<3.0",
+]
+
+[project.scripts]
+bizim-performans-araci = "bizim_performans_araci.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

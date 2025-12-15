@@ -1,0 +1,2 @@
+[console_scripts]
+bizim-performans-araci = bizim_performans_araci.cli:main

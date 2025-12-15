@@ -14,7 +14,7 @@ class RunCreate(BaseModel):
 class RunBase(BaseModel):
     id: int
     command: str
-    started_at: datetime
+    started_at: datetime | None
     ended_at: Optional[datetime]
     status: str
     exit_code: Optional[int]

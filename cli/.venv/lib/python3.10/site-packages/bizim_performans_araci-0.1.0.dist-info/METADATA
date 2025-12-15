@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: bizim-performans-araci
+Version: 0.1.0
+Summary: CLI wrapper to capture CPU and RAM usage for test runs.
+Author: Bizim Takim
+Requires-Python: >=3.10
+Requires-Dist: psutil<6.0,>=5.9
+Requires-Dist: requests<3.0,>=2.31

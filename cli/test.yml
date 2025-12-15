@@ -1,0 +1,17 @@
+# test.yml dosyasının DÜZELTİLMİŞ içeriği
+appId: com.apple.calculator
+---
+- launchApp
+- tapOn: "1"
+- evalScript: |
+    new Promise(resolve => setTimeout(resolve, 1000));
+- tapOn: "+"
+- evalScript: |
+    new Promise(resolve => setTimeout(resolve, 1000));
+- tapOn: "2"
+- evalScript: |
+    new Promise(resolve => setTimeout(resolve, 1000));
+- tapOn: "="
+- evalScript: |
+    new Promise(resolve => setTimeout(resolve, 1000));
+- assertVisible: "3"

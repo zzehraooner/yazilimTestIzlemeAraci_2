@@ -1,5 +1,7 @@
 from sqlalchemy import BigInteger, Column, DateTime, Float, ForeignKey, Integer, String, Text, func
 from sqlalchemy.orm import relationship
+from datetime import datetime, timezone
+from sqlalchemy.sql import func
 
 from .db import Base
 
@@ -9,7 +11,7 @@ class TestRun(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     command = Column(Text, nullable=False)
-    started_at = Column(DateTime(timezone=True), server_default=func.now())
+    started_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     ended_at = Column(DateTime(timezone=True), nullable=True)
     status = Column(String, nullable=False, default="running")
     exit_code = Column(Integer, nullable=True)

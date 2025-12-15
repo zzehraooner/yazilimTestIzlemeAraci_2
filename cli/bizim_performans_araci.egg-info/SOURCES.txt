@@ -1,0 +1,9 @@
+pyproject.toml
+bizim_performans_araci/__init__.py
+bizim_performans_araci/cli.py
+bizim_performans_araci.egg-info/PKG-INFO
+bizim_performans_araci.egg-info/SOURCES.txt
+bizim_performans_araci.egg-info/dependency_links.txt
+bizim_performans_araci.egg-info/entry_points.txt
+bizim_performans_araci.egg-info/requires.txt
+bizim_performans_araci.egg-info/top_level.txt
